@@ -1,11 +1,13 @@
 <?php
 
 function destijl_enqueue_style() {
-	wp_enqueue_style( 'bootstrap', '/wp-content/themes/destijl/bootstrap/css/bootstrap.css', false ); 
+	wp_enqueue_style( 'bootstrap-style', '/wp-content/themes/destijl/bootstrap/css/bootstrap.css', false ); 
 	wp_enqueue_style( 'ds-theme-style', '/wp-content/themes/destijl/style.css', false ); 
 }
 
 function destijl_enqueue_script() {
+	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js', false );
+	wp_enqueue_script( 'bootstrap-js', '/wp-content/themes/destijl/bootstrap/js/bootstrap.min.js', false );
 	wp_enqueue_script( 'ds-theme-script', '/wp-content/themes/destijl/js/scripts.js', false );
 }
 
