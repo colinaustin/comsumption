@@ -1,0 +1,19 @@
+/*
+Theme Name: De Stijl
+Theme URI: http://comsumption.com
+Author: Colin Austin
+Author URI: http://comsumption.com
+Description: Theme inspired by Piet Mondriaan and De Stijl
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: theme, wtf, de stijl
+Text Domain: destijl
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others. And I second that. It is the spirit of enlightenment.
+*/
+
+body{
+	background:#EBE5C8;
+}
