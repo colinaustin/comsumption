@@ -1,16 +1,24 @@
-		</div><!-- #main -->
+</div>
+<!-- #main -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
+<div class="row">
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="col-md-4">
+      <?php dynamic_sidebar( 'footer-sidebar-1' ); ?>
+    </div>
+    <div class="col-md-4">
+      <nav id="header-menu" class="site-navigation primary-navigation" role="navigation">
+        <?php wp_nav_menu( array( 'theme_location' => 'footer-menu', 'menu_class' => 'nav-menu', 'menu_id' => 'footer-menu' ) ); ?>
+      </nav>
+    </div>
+    <div class="col-md-4">
+      <?php dynamic_sidebar( 'footer-sidebar-2' ); ?>
+    </div>
+  </footer>
+  <!-- #colophon --> 
+</div>
+</div>
+<!-- #page -->
 
-			<?php get_sidebar( 'footer' ); ?>
-
-			<div class="site-info">
-				<?php do_action( 'twentyfourteen_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentyfourteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentyfourteen' ), 'WordPress' ); ?></a>
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
-	</div><!-- #page -->
-
-	<?php wp_footer(); ?>
-</body>
-</html>
+<?php wp_footer(); ?>
+</body></html>
