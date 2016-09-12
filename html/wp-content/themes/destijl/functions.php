@@ -1,8 +1,16 @@
 <?php
+//include required files
+// Register Custom Navigation Walker - adds Bootstrap support to WP nav
+require_once('wp_bootstrap_navwalker.php');
+
+// add theme support
+add_theme_support( 'post-thumbnails' );
+
+
+//theme functions
 function destijl_title() {
  add_theme_support( 'title-tag' );
 }
-add_action( 'after_setup_theme', 'destijl_title' );
 
 function destijl_enqueue_style() {
 	wp_enqueue_style( 'bootstrap-style', '/wp-content/themes/destijl/bootstrap/css/bootstrap.css', false ); 
@@ -47,7 +55,9 @@ function destijl_widgets_init() {
     ) );
 }
 
+//add actions
 add_action( 'init', 'destijl_register_menus' );
+add_action( 'after_setup_theme', 'destijl_title' );
 add_action( 'widgets_init', 'destijl_widgets_init' );
 add_action( 'wp_enqueue_scripts', 'destijl_enqueue_style' );
 add_action( 'wp_enqueue_scripts', 'destijl_enqueue_script' );
