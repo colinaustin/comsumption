@@ -13,7 +13,19 @@ Text Domain: destijl
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others. And I second that. It is the spirit of enlightenment.
 */
-
+* {
+	font-family: "brandon-grotesque",sans-serif;
+}
 body{
 	background:#EBE5C8;
+}
+
+.site-title{
+	font-size:4.8em;
+	color: #BD1D20;
+	letter-spacing:-0.05em;
+	}
+h1{
+	font-weight:900;
+	font-size: 3em;
 }
