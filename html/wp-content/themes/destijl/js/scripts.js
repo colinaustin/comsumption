@@ -1,24 +1,7 @@
 // JavaScript Document - custom theme functions
 
-/* var slideout = new Slideout({
-    'panel': document.getElementById('main-wrapper'),
-    'menu': document.getElementById('header-menu'),
-    'padding': 256,
-    'tolerance': 70,
-	'side':'right'
-  });
-  
-   // Toggle button
-      document.querySelector('.navbar-toggle').addEventListener('click', function() {
-        slideout.toggle();
-	  });
-	  
-	  //Close (toggle) button on menu
-document.getElementById('closemenu').addEventListener('click', function() {
-  slideout.toggle();
-}); */
 $(document).ready(function(e) {
-    //Navigation Menu Slider
+    //Navigation Menu Slider ref http://blog.themearmada.com/off-canvas-slide-menu-for-bootstrap/
         $('.navbar-toggle').on('click',function(e){
       		e.preventDefault();
       		$('body').toggleClass('nav-expanded');
@@ -27,6 +10,7 @@ $(document).ready(function(e) {
       	$('#nav-close').on('click',function(e){
       		e.preventDefault();
       		$('body').removeClass('nav-expanded');
+			$('.navbar-toggle').removeClass('fixed');
       	});
 
       	// Initialize navgoco with default options

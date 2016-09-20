@@ -17,6 +17,7 @@
 </head>
 <body <?php body_class(); ?>>
 <nav id="header-menu" class="navbar navbar-default primary-navigation" role="navigation">
+	<button id="nav-close">X</button>
   <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'menu_class' => 'nav nav-pills nav-stacked', 'menu_id' => 'primary-menu','fallback_cb' => 'wp_bootstrap_navwalker::fallback', 'walker' => new wp_bootstrap_navwalker() ) ); ?>
 </nav>
 <div id="page" class="container-fluid">

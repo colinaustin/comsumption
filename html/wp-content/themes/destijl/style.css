@@ -15,271 +15,199 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /* base colors */
-html, body{
-	background:#fff;
+html, body {
+	background: #fff;
 }
-
-body{
-	width:100%;
+body {
+	width: 100%;
 	height: 100%;
 }
-
 /* basic typography */
 
 body {
-	font-family: "proxima-nova",sans-serif;
+	font-family: "proxima-nova", sans-serif;
 }
-
-
-.site-title{
-	font-family: "vortice-concept-n4", "vortice-concept",sans-serif;
+.site-title {
+	font-family: "vortice-concept-n4", "vortice-concept", sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size:2.4em;
+	font-size: 2.4em;
 	color: #E02820;
 	margin: 1em;
-	text-transform:uppercase;
+	text-transform: uppercase;
 }
-.site-title:before{
-	display:block;
-	content:'';
+.site-title:before {
+	display: block;
+	content: '';
 	width: 0.5em;
-	height:2em;
-	background:#E02820;
+	height: 2em;
+	background: #E02820;
 	float: left;
 	margin: -0.5em 0.5em 0 0;
 }
-.site-title a{
+.site-title a {
 	color: #E02820;
-	text-decoration:none;
+	text-decoration: none;
 }
-.site-title a:hover, .site-title a:active{
+.site-title a:hover, .site-title a:active {
 	opacity: 0.7;
 }
-h1{
-	font-family: "vortice-concept-n4", "vortice-concept",sans-serif;
+h1 {
+	font-family: "vortice-concept-n4", "vortice-concept", sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 2.4em;
 }
-h2{
-	font-size:2.4em;
-	font-weight:900;
+h2 {
+	font-size: 2.4em;
+	font-weight: 900;
 }
-h3{
+h3 {
 	font-size: 2.2em;
-	font-weight:700;
+	font-weight: 700;
 }
-h4{
+h4 {
 	font-size: 2em;
-	font-weight:400;
+	font-weight: 400;
 	text-transform: uppercase;
 }
-h5{
+h5 {
 	font-size: 1.8em;
-	font-weight:700;
+	font-weight: 700;
 }
-p,li{
+p, li {
 	/* font-family: "rooney", Georgia, serif; */
 	font-size: 1.4em;
-	line-height:1.5em;
+	line-height: 1.5em;
 }
-
 /* generic elements */
-button, html input[type="button"], input[type="reset"], input[type="submit"], a.button{
-    display: block;
+button, html input[type="button"], input[type="reset"], input[type="submit"], a.button {
+	display: block;
 	color: #fff;
-	background:red;
+	background: red;
 	padding: 0.3em 1em;
-	font-family:"proxima-nova";
+	font-family: "proxima-nova";
 	border: none;
 	font-weight: 500;
-	text-transform:uppercase;
+	text-transform: uppercase;
 }
-button:hover, button:active, html input[type="button"], html input[type="button"]:hover, html input[type="button"]:active, input[type="reset"], input[type="reset"]:hover, input[type="reset"]:active, input[type="submit"]:hover, input[type="submit"]:active, a.button:hover, a.button:active{
-		opacity: 0.7;
-		cursor:pointer;
+button:hover, button:active, html input[type="button"], html input[type="button"]:hover, html input[type="button"]:active, input[type="reset"], input[type="reset"]:hover, input[type="reset"]:active, input[type="submit"]:hover, input[type="submit"]:active, a.button:hover, a.button:active {
+	opacity: 0.7;
+	cursor: pointer;
 }
-textarea{
-	max-width:100%;
-	display:block;
+textarea {
+	max-width: 100%;
+	display: block;
 }
-
 /* structure */
 
 /* page elements */
-article{
+article {
 	padding: 1em;
 	background: rgba(235,229,200,0.4);
 	margin-top: 2em;
 }
-#secondary{
+#secondary {
 	padding: 1em;
 	background: rgba(235,229,200,0.4);
 }
-
 /*post */
-.entry-meta span{
+.entry-meta span {
 	font-size: 1.4em
 }
-
 /* nav bar */
 .navbar-collapse.in {
 	/* make sure drop downs are visible  */
-    overflow-y: visible;
+	overflow-y: visible;
 }
 .collapsing {
 	/* stop animations */
-    -webkit-transition: none;
-    transition: none;
+	-webkit-transition: none;
+	transition: none;
 }
 .dropdown-menu {
-	position:static;
+	position: static;
 	box-shadow: none;
 	-webkit-box-shadow: none;
+	width: 100%;
 }
-.navbar-toggle{
-	background:red;
+/* styles pertaining to navgoco slideout menu */
+body.nav-expanded {
+	margin-left: 0em;
+	transition: right 0.4s ease-in-out 0s;
+	-webkit-transition: right 0.4s ease-in-out 0s;
+	-moz-transition: right 0.4s ease-in-out 0s;
+	-o-transition: right 0.4s ease-in-out 0s;
 }
-
-
-
-button.navbar-toggle{
-  background: none repeat scroll 0 0 #000000;
-  color: #FFFFFF;
-  display: block;
-  font-size: 15px;
-  font-weight: 400;
-  height: 50px;
-  margin-right: 0;
-  padding: 1em 1.6em 2em;
-  position: absolute;
-  right: 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  top: 0;
-  transition: right 0.3s ease-in-out 0s;
-  width: 130px;
-  z-index: 12;
-
-  transition: right 0.3s ease-in-out 0s;
-  -webkit-transition: right 0.3s ease-in-out 0s;
-  -moz-transition: right 0.3s ease-in-out 0s;
-  -o-transition: right 0.3s ease-in-out 0s;
+button.navbar-toggle {
+	background: none repeat scroll 0 0 #000000;
+	color: #FFFFFF;
+	display: block;
+	font-weight: 400;
+	height: 50px;
+	margin-right: 0;
+	padding: 1em;
+	position: absolute;
+	right: 6em;
+	text-decoration: none;
+	text-transform: uppercase;
+	top: 3em;
+	transition: right 0.3s ease-in-out 0s;
+	z-index: 12;
+	transition: right 0.3s ease-in-out 0s;
+	-webkit-transition: right 0.3s ease-in-out 0s;
+	-moz-transition: right 0.3s ease-in-out 0s;
+	-o-transition: right 0.3s ease-in-out 0s;
 }
-
 button.navbar-toggle:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 button.navbar-toggle.fixed {
-  position: fixed;
+	position: fixed;
 }
-
 .nav-expanded button.navbar-toggle.fixed {
-    right: 20em;
+	right: 20em;
 }
-
-
-/* slideout menu specifics 
-.slideout-menu {
-  position: fixed;
-  left: auto;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 0;
-  width: 256px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-  display: none;
-}
-
-.slideout-panel {
-  position:relative;
-  z-index: 1;
-  will-change: transform;
-}
-
-.slideout-open,
-.slideout-open body,
-.slideout-open .slideout-panel {
-  overflow: hidden;
-}
-
-.slideout-open .slideout-menu {
-  display: block;
-}*/
-
 #header-menu {
-  background: #2d2f33;
-  display: block;
-  height: 100%;
-  overflow: auto;
-  position: fixed;
-  right: -20em;
-  font-size: 15px;
-  top: 0;
-  width: 20em;
-  z-index: 2000;
-
-  transition: right 0.3s ease-in-out 0s;
-  -webkit-transition: right 0.3s ease-in-out 0s;
-  -moz-transition: right 0.3s ease-in-out 0s;
-  -o-transition: right 0.3s ease-in-out 0s;
-
+	background: #fff;
+	display: block;
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	right: -20em;
+	top: 0;
+	width: 20em;
+	z-index: 2000;
+	transition: right 0.3s ease-in-out 0s;
+	-webkit-transition: right 0.3s ease-in-out 0s;
+	-moz-transition: right 0.3s ease-in-out 0s;
+	-o-transition: right 0.3s ease-in-out 0s;
 }
 .nav-expanded #header-menu {
-  right: 0;
+	right: 0;
 }
-
-body.nav-expanded {
-  margin-left: 0em;
-  transition: right 0.4s ease-in-out 0s;
-  -webkit-transition: right 0.4s ease-in-out 0s;
-  -moz-transition: right 0.4s ease-in-out 0s;
-  -o-transition: right 0.4s ease-in-out 0s;
+.menu-header-menu-container {
+	clear: both;
 }
-
 #nav-close {
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  padding-right: 10px;
+	float: right;
+	padding: 0.5em;
+	text-align: center;
+	width: 10%;
+	margin-left: 90%
 }
-
-a.nav-expander {
-  background: none repeat scroll 0 0 #000000;
-  color: #FFFFFF;
-  display: block;
-  font-size: 15px;
-  font-weight: 400;
-  height: 50px;
-  margin-right: 0;
-  padding: 1em 1.6em 2em;
-  position: absolute;
-  right: 0;
-  text-decoration: none;
-  text-transform: uppercase;
-  top: 0;
-  transition: right 0.3s ease-in-out 0s;
-  width: 130px;
-  z-index: 12;
- 
-  transition: right 0.3s ease-in-out 0s;
-  -webkit-transition: right 0.3s ease-in-out 0s;
-  -moz-transition: right 0.3s ease-in-out 0s;
-  -o-transition: right 0.3s ease-in-out 0s;
- 
-}
- 
-a.nav-expander:hover {
-  cursor: pointer;
-}
- 
-a.nav-expander.fixed {
-  position: fixed;
-}
- 
-.nav-expanded a.nav-expander.fixed {
-    right: 20em;
+/* search  toggle / form */
+.search-toggle {
+	background: none repeat scroll 0 0 #000000;
+	color: #FFFFFF;
+	display: block;
+	font-weight: 400;
+	height: 50px;
+	margin-right: 0;
+	padding: 1em;
+	position: absolute;
+	right: 8em;
+	text-decoration: none;
+	text-transform: uppercase;
+	top: 3em;
 }
