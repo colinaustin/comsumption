@@ -7,7 +7,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php the_post_thumbnail( the_ID(), 'full' ); ?>
 
 	<header class="entry-header">
 		<?php
@@ -22,7 +21,7 @@
 		<div class="entry-meta">
 			<?php
 				if ( 'post' == get_post_type() )
-					the_date('Y-m-d', '<h2>', '</h2>');
+					the_date('l, jS F Y', '<h4>', '</h4>');
 
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 			?>

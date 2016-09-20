@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="col-md-6">
 		<div id="content" class="site-content" role="main">
 			<?php
 				// Start the Loop.
@@ -29,6 +29,8 @@ get_header(); ?>
 			?>
 		</div><!-- #content -->
 	</div><!-- #primary -->
-
+	<div id="secondary" class="col-md-4">
+		<?php dynamic_sidebar('main-sidebar-1'); ?>
+    </div>
 <?php
 get_footer();
