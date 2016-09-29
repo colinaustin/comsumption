@@ -29,7 +29,7 @@
         </a></div>
     </div>
     <div class="col-xs-6">
-      <div class="search-toggle"> <a href="#search-container" class="screen-reader-text"> Search </a> </div>
+      <button type="button" class="search-toggle collapsed" data-toggle="collapse" data-target="#search-container" aria-expanded="false"> <span class="sr-only">Toggle search</span> <span class="glyphicon glyphicon-search"></span></button>
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-menu-nav-wrapper" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="glyphicon glyphicon-menu-hamburger"></span></button>
     </div>
   </div>

@@ -15,13 +15,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /* base colors */
+
 html, body {
+	/* body can be ovewritten by theme options */
 	background: #fff;
 }
-body {
-	width: 100%;
-	height: 100%;
-}
+
 /* basic typography */
 
 body {
@@ -101,6 +100,11 @@ textarea {
 }
 /* structure */
 
+body {
+	width: 100%;
+	height: 100%;
+}
+
 /* page elements */
 article {
 	padding: 1em;
@@ -127,8 +131,8 @@ article {
 }
 .dropdown-menu {
 	position: static;
-	box-shadow: none;
 	-webkit-box-shadow: none;
+	box-shadow: none;
 	width: 100%;
 }
 /* styles pertaining to navgoco slideout menu */
@@ -140,19 +144,18 @@ body.nav-expanded {
 	-o-transition: right 0.4s ease-in-out 0s;
 }
 button.navbar-toggle {
-	background: none repeat scroll 0 0 #000000;
-	color: #FFFFFF;
+	background: transparent;
+	color: #000;
 	display: block;
+	font-size: 2em;
 	font-weight: 400;
-	height: 50px;
-	margin-right: 0;
+	margin:0 !important;
 	padding: 1em;
 	position: absolute;
-	right: 6em;
+	right: 3em;
 	text-decoration: none;
 	text-transform: uppercase;
-	top: 3em;
-	transition: right 0.3s ease-in-out 0s;
+	top: 0.5em;
 	z-index: 12;
 	transition: right 0.3s ease-in-out 0s;
 	-webkit-transition: right 0.3s ease-in-out 0s;
@@ -166,7 +169,7 @@ button.navbar-toggle.fixed {
 	position: fixed;
 }
 .nav-expanded button.navbar-toggle.fixed {
-	right: 20em;
+	right:3em;
 }
 #header-menu {
 	background: #fff;
@@ -198,16 +201,36 @@ button.navbar-toggle.fixed {
 }
 /* search  toggle / form */
 .search-toggle {
-	background: none repeat scroll 0 0 #000000;
-	color: #FFFFFF;
+	background: transparent;
+	color: #000;
 	display: block;
 	font-weight: 400;
-	height: 50px;
+	font-size: 2em;
 	margin-right: 0;
 	padding: 1em;
 	position: absolute;
-	right: 8em;
-	text-decoration: none;
-	text-transform: uppercase;
-	top: 3em;
+	right: 5em;
+	top:0.5em;
+	border-radius: 4px;
+	overflow:hidden
+}
+.search-toggle:focus{
+	outline:none;
+}
+
+/* main content */
+#main{
+
+}
+/* footer */
+#footer{
+	background:#000;
+	border-top: 4px solid #E02820;
+	padding-top: 2em;
+	padding-bottom:2em;
+	
+}
+
+#footer * {
+	color: #fff !important;
 }

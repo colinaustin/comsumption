@@ -1,0 +1,19 @@
+/* CSS Document */
+.wrpp li{
+	list-style:none;
+	clear: both;
+	margin-bottom: 20px;
+	}
+	
+.wrpp li span{
+	display:block;
+}
+.recent-post-thumbnail{
+	float: left;
+	padding: 0 10px 10px 0;
+
+}
+.recent-post-thumbnail-image{
+		max-width:100%;
+		height: auto;
+}
